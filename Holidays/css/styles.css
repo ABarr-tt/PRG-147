@@ -1,0 +1,31 @@
+#holidays-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  li:nth-child(even) {
+    font-style: italic;
+    color: #777;
+  }
+  
