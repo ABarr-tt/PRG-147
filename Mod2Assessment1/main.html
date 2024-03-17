@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/styles.css">
+<title>Simple HTML Menu</title>
+</head>
+<body>
+
+<div class="container">
+  <h1>Simple HTML Menu</h1>
+  <form id="orderForm">
+    <label for="customerName">Customer Name:</label>
+    <input type="text" id="customerName" required><br><br>
+    
+    <fieldset>
+      <legend>Drinks</legend>
+      <label><input type="checkbox" name="drinks" value="Coke"> Coke</label><br>
+      <label><input type="checkbox" name="drinks" value="Pepsi"> Pepsi</label><br>
+      <label><input type="checkbox" name="drinks" value="Sprite"> Sprite</label><br>
+      <label><input type="checkbox" name="drinks" value="Iced Tea"> Iced Tea</label><br>
+      <label><input type="checkbox" name="drinks" value="Lemonade"> Lemonade</label><br>
+    </fieldset><br>
+    
+    <fieldset>
+      <legend>Sandwiches</legend>
+      <label><input type="checkbox" name="sandwiches" value="Hamburger"> Hamburger</label><br>
+      <label><input type="checkbox" name="sandwiches" value="Cheeseburger"> Cheeseburger</label><br>
+      <label><input type="checkbox" name="sandwiches" value="Club Sandwich"> Club Sandwich</label><br>
+      <label><input type="checkbox" name="sandwiches" value="Grilled Cheese"> Grilled Cheese</label><br>
+      <label><input type="checkbox" name="sandwiches" value="BLT"> BLT</label><br>
+    </fieldset><br>
+    
+    <fieldset>
+      <legend>Deserts/Sides</legend>
+      <label><input type="checkbox" name="deserts" value="French Fries"> French Fries</label><br>
+      <label><input type="checkbox" name="deserts" value="Onion Rings"> Onion Rings</label><br>
+      <label><input type="checkbox" name="deserts" value="Chocolate Cake"> Chocolate Cake</label><br>
+      <label><input type="checkbox" name="deserts" value="Ice Cream"> Ice Cream</label><br>
+      <label><input type="checkbox" name="deserts" value="Brownie"> Brownie</label><br>
+    </fieldset><br>
+    
+    <button type="button" onclick="calculateOrder()">Submit</button>
+  </form>
+  
+  <div id="summary" style="display: none;">
+    <h2>Order Summary</h2>
+    <div id="drinkSummary"></div>
+    <div id="sandwichSummary"></div>
+    <div id="desertSummary"></div>
+    <div id="totalCost"></div>
+  </div>
+</div>
+
+<footer>
+  Created by Your Name
+</footer>
+
+
+</body>
+</html>
