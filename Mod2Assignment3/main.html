@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Book Catalog</title>
+</head>
+<body onload="loadBooks()">
+    <h1>Book Catalog</h1>
+
+    <div id="bookContainer"></div>
+
+    <template id="bookTemplate">
+        <div class="book">
+            <h2>Title: <span class="title"></span></h2>
+            <p>Author: <span class="author"></span></p>
+            <p>Genre: <span class="genre"></span></p>
+            <p>Publication Year: <span class="year"></span></p>
+            <p>Synopsis: <span class="synopsis"></span></p>
+        </div>
+    </template>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
